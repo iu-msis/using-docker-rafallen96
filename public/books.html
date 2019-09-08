@@ -38,7 +38,7 @@
       </main>
 
 
-   <table class="table table-striped table-hover table-condensed ">
+   <table id="bookTable" class="table table-striped table-hover table-condensed ">
        <thead>
        <tr>
            <!--used table structure from techbootcamp 2 in class excercise-->
@@ -152,11 +152,14 @@
    </form>
 
 
-
+/** I used this code from http://tristen.ca/tablesort/demo/**/
         <footer>
 This page was designed by Rachel Allen
         </footer>
-
+<script src="js/tablesort.min.js"></script>
+        <script>
+          new Tablesort(document.getElementById('bookTable'));
+        </script>
 
 </body>
 </html>
