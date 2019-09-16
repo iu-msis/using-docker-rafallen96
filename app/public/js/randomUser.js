@@ -1,11 +1,11 @@
-var userApp = new Vue ({
+var randomUser = new Vue ({
 el: '#randomUserApp',
 data: {
   users: {
       picture:"",
       name:"",
       nat:"",
-      age:"".
+      age:"",
       dob:"",
       mail:""  }
 
