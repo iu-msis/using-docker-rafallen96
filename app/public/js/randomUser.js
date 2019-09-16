@@ -7,16 +7,14 @@ data: {
       nat:"",
       age:"".
       dob:"",
-      mail:""
-
-  }
+      mail:""  }
 
 },
 methods: {
   fetchUsers() {
     fetch('https://randomuser.me/api/')
     .then(response => response.json())
-    .then(json => {userApp.users = json.results[0] });
+    .then(json => {userApp.users = json] });
   }
 },
 created(){
