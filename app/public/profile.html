@@ -36,11 +36,7 @@
 
 
 
-
-
-
-
-  <div id="randomUserApp" class="col-md-3 queueView">
+  <div id="randomUserApp" class="col-md-12 queueView">
     <span><a :href="users.picture.large"><img :src="users.picture.large" alt="Profile Picture"> </a> </span>
       <br>
       <link href="https://randomuser.me/photos"> <small> <i> Source: Randomuser.me </i></small>
@@ -50,7 +46,11 @@
         <strong>Age:</strong> <span> {{users.dob.age}}</span><br>
         <strong>Birthdate:</strong> <span> {{users.dob.date}}</span><br>
         <strong>Email:</strong> <span><a :href="'mailto:'+ users.email"> {{users.email}}</a></span><br>
+        <form id="form" @submit.prevent="fetchUsers">
+          <button type="submit"> New User </button>
+        </form>
       </div>
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>

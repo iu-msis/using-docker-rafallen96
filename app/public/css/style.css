@@ -36,6 +36,11 @@ border-color: black;
 font-family: impact;
 }
 
+#randomUserApp{
+  text-align: center;
+  border-radius: 6px;
+}
+
 h4{
   margin-left: padding 10px;
   font-family: impact;
